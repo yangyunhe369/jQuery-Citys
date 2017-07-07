@@ -24,7 +24,7 @@ Html：
 	<select class="city-select" name="area"></select>
 </div>
 Javascript：
-$('#citys').citys(options);
+$('.citys').citys(options);
 ```
 
 ## 说明
