@@ -138,7 +138,7 @@
 				var pattern = new RegExp(valStr + "\\d{4}"), //匹配二级菜单数据正则
 						cityHtml = "",
 						arr = [];
-				cityHtml = "<option>-请选择-</option>"; //添加列表头
+				cityHtml = "<option> - 请选择 - </option>"; //添加列表头
 				for(var i in citys){
 					if(pattern.test(i) && i != valStr + "0000"){
 						arr[i] = citys[i];
@@ -152,7 +152,7 @@
 				var pattern = new RegExp(valStr + "\\d{2}00"), //匹配三级菜单数据正则
 						cityHtml = "",
 						arr = [];
-				cityHtml = "<option>-请选择-</option>"; //添加列表头
+				cityHtml = "<option> - 请选择 - </option>"; //添加列表头
 				for(var i in citys){
 					if(pattern.test(i) && i != valStr + "0000"){
 						arr[i] = citys[i];
@@ -169,7 +169,7 @@
 					pattern = new RegExp(valStr + "\\d{2}"),
 					areaHtml = "",
 					arr = [];
-			areaHtml = "<option>-请选择-</option>"; //添加列表头
+			areaHtml = "<option> - 请选择 - </option>"; //添加列表头
 			if(selState == 1){
 				for(var i in citys){
 					if(pattern.test(i) && i != valStr + "00"){
