@@ -1,5 +1,4 @@
-﻿@charset 'utf-8';
-/*===========================  重置初始样式 start  ===========================*/
+﻿/*===========================  重置初始样式 start  ===========================*/
 html,div,body,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {margin:0;padding:0;border:0;outline:0;font-size:100%;line-height:100%;vertical-align:baseline;background:transparent;}
 ol,ul,li,ul li{list-style:none;}
 :focus {outline:0;}
@@ -44,9 +43,6 @@ a:hover{text-decoration:none;}
 .pb5{padding-bottom:5px;}.pb10{padding-bottom:10px;}.pb15{padding-bottom:15px;}.pb20{padding-bottom:20px;}.pb25{padding-bottom:25px;}.pb30{padding-bottom:30px;}
 /*---------------------------  填充 end  ---------------------------*/
 
-/*---------------------------  icon start  ---------------------------*/
-.icon{background:url(../images/icon.png) no-repeat;}
-/*---------------------------  icon end  ---------------------------*/
 /*---------------------------  代码展示框 start  ---------------------------*/
 h1{width: 960px;margin:0 auto 20px;padding-top:20px;font-size: 18px;line-height: 25px;font-weight: normal;}
 h2{margin: 25px 0;font-size: 16px;}

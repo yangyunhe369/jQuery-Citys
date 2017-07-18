@@ -8,7 +8,7 @@
 	$.fn.citys = function(options) {
 		//定义参数
 		var _options = $.extend({
-				url : 'js/jquery-citys.json',					//省市区json数据地址
+				url : './jquery-citys.json',					//省市区json数据地址
 				patternPro : /\d{2}0000/,							//初始化正则匹配省数据
 				patternCity : /1101\d{2}/,						//初始化正则匹配市数据
 				type : 'code',												//下拉框值的类型,code行政区划代码,name地名
