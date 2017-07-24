@@ -113,7 +113,8 @@ export default {
     return {
       h1_title: [
         `基于jQuery的省市区三级联动插件，数据来源于国家统计局行政规划代码数据，真实有效。`,
-        `作者：弦云孤赫(David Yang) Yang&nbsp;&nbsp;&nbsp;&nbsp;联系方式—QQ：314786482`,
+        `作者：弦云孤赫(David Yang) Yang`,
+        `联系方式—QQ：314786482`,
         `温馨提示：作者开源不易，希望使用本插件时，能署名作者，感谢支持。`
       ],
       city_nameArr: ['province','city','area']
@@ -144,7 +145,7 @@ export default {
 
 </script>
 <style src="./css/common.css" lang="css"></style>
-<style lang="css">
+<style lang="scss">
 .main{
   width: 960px;
   margin: 50px auto 0;
@@ -167,11 +168,11 @@ export default {
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-.citys .city-select:focus{ 
-  border-color: #66afe9;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+  &:focus{ 
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+  }
 }
 </style>
