@@ -77,13 +77,14 @@ $('.citys').citys()
 
 // 配置项调用方式
 $('.citys').citys({
-  url : './jquery-citys.json',          //省市区json数据地址
-  province : '',                        //省份(省级),可以为地区编码或者名称
-  city : '',                            //城市(地级),可以为地区编码或者名称
-  area : '',                            //地区(县区级),可以为地区编码或者名
-  selProvince : "province",             //省份、直辖市列表框name
-  selCity : "city",                     //城市、区列表框name
-  selArea : "area",                     //区、县列表框name
+  url : './jquery-citys.json',          // 省市区json数据地址
+  province : '',                        // 省份(省级),可以为地区编码或者省份名称
+  city : '',                            // 城市(地级),可以为地区编码或者城市名称
+  area : '',                            // 地区(县区级),可以为地区编码或者地区名称
+  type : 'code',                        // 下拉框值的类型,code行政区划代码,name地名
+  selProvince : "province",             // 省份、直辖市列表框name
+  selCity : "city",                     // 城市、区列表框name
+  selArea : "area",                     // 区、县列表框name
 });
 // ps：所有配置项都非必须填写
 ```
