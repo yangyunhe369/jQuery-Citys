@@ -1,6 +1,17 @@
-<template>
-<div id="app">
-  <h1>{{h1_title[0]}}<br><br>{{h1_title[1]}}<br><br>{{h1_title[2]}}</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>省市区三级联动—jQuery插件</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+  <h1>
+    基于jQuery的省市区三级联动插件，数据来源于国家统计局行政规划代码数据，真实有效。<br><br>
+    作者：弦云孤赫(David Yang) Yang<br><br>
+    联系方式—QQ：314786482
+  </h1>
   <div class="code">
     <p>调用省市区三级联动插件：</p>
     <p class="mb20">
@@ -11,21 +22,27 @@
   </div>
   <div class="main">
     <div class="citys mb20" id="demo1">
-      <select v-for="item in city_nameArr" class="city-select" :name="item"></select>
+      <select class="city-select" name="province"></select>
+      <select class="city-select" name="city"></select>
+      <select class="city-select" name="area"></select>
     </div>
     <div class="code">
       <p>默认参数初始化设置</p>
       <p>$('#demo1').citys();</p>
     </div>
     <div class="citys mb20" id="demo2">
-      <select v-for="item in city_nameArr" class="city-select" :name="item"></select>
+      <select class="city-select" name="province"></select>
+      <select class="city-select" name="city"></select>
+      <select class="city-select" name="area"></select>
     </div>
     <div class="code">
       <p>通过地区编码初始化设置</p>
       <p>$('#demo2').citys({code: '510116'});</p>
     </div>
     <div class="citys mb20" id="demo3">
-      <select v-for="item in city_nameArr" class="city-select" :name="item"></select>
+      <select class="city-select" name="province"></select>
+      <select class="city-select" name="city"></select>
+      <select class="city-select" name="area"></select>
     </div>
     <div class="code">
       <p>通过地区名称初始化设置，并且下拉框值为地区名称</p>
@@ -104,22 +121,10 @@
       </tbody>
     </table>
   </div>
-</div>
-</template>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery-citys.min.js"></script>
 <script>
-export default {
-  name: 'app',
-  data () {
-    return {
-      h1_title: [
-        `基于jQuery的省市区三级联动插件，数据来源于国家统计局行政规划代码数据，真实有效。`,
-        `作者：弦云孤赫(David Yang) Yang`,
-        `联系方式—QQ：314786482`
-      ],
-      city_nameArr: ['province','city','area']
-    }
-  },
-  mounted () {
+  $(function(){
     /*demo1
     ***默认设置
     */
@@ -139,39 +144,7 @@ export default {
       city: '成都市',
       area: '武侯区'
     });
-  }
-}
-
+  })
 </script>
-<style src="./css/common.css" lang="css"></style>
-<style lang="scss">
-.main{
-  width: 960px;
-  margin: 50px auto 0;
-}
-.citys .city-select{
-  color: black;
-  cursor: default;
-  margin: 0 5px;
-  width: auto;
-  height: 100%;
-  padding: 6px 12px;
-  font-size: 14px;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  &:focus{ 
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-  }
-}
-</style>
+</body>
+</html>
