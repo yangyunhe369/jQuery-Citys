@@ -1,8 +1,6 @@
 # jQuery-Citys
 中国省市区三级联动的jQuery插件
 
-该轮播图效果为切换轮播图时会产生视差效果，以及文字的一个缩放效果。
-
 ps:由于本插件使用了ajax方式获取json数据，如果只引入资源文件中的 **jquery-citys.js** 和 **jquery-citys.json**在本地进行测试时，须通过服务器环境运行，类似这样：  http://127.0.0.1:8888/index.html。
 
 **demo**：[线上地址](https://yangyunhe369.github.io/jQuery-Citys/)
